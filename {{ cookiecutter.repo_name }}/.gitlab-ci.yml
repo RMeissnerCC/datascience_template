@@ -1,0 +1,25 @@
+image: docker:stable
+
+stages:
+  - test
+
+
+variables:
+  PROJECT_NAME: {{ cookiecutter.repo_name }}
+  PROJECT_NAME_SLUG: {{ cookiecutter.repo_name }}
+
+test-unit:
+  stage: test
+  image: python:3.10
+  before_script:
+    - python -m pip install --upgrade pip
+    - pip install poetry
+    - poetry export --without-hashes --dev -o requirements.txt
+    - pip install -r requirements.txt
+  script:
+    - PWD=$(pwd)
+    - export PYTHONPATH=$PWD/src:$PWD/tests:$PYTHONPATH
+    - echo "PYTHONPATH=$PYTHONPATH"
+    - export "PYTEST_RUN_CONFIG=true"
+    - pytest tests --doctest-modules --junitxml=junit/test-results.xml
+    - coverage xml -o coverage.xml

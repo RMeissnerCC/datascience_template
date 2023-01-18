@@ -1,9 +1,8 @@
-# Cookiecutter Data Science
+# Data Science template
 
-_A logical, reasonably standardized, but flexible project structure for doing and sharing data science work._
+My own fork of Cookiecutter [Data Science template](http://drivendata.github.io/cookiecutter-data-science/:
 
-
-#### [Project homepage](http://drivendata.github.io/cookiecutter-data-science/)
+#### [Project homepage](https://github.com/RMeissnerCC/datascience_template)
 
 
 ### Requirements to use the cookiecutter template:
