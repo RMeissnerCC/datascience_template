@@ -67,7 +67,7 @@ With this in mind, we've created a data science cookiecutter template for projec
 Starting a new project is as easy as running this command at the command line. No need to create a directory first, the cookiecutter will do it for you.
 
 ```nohighlight
-cookiecutter https://github.com/drivendata/cookiecutter-data-science
+cookiecutter https://github.com/RMeissnerCC/datascience_template
 ```
 
 ### Example
@@ -119,8 +119,6 @@ cookiecutter https://github.com/drivendata/cookiecutter-data-science
 │   │
 │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
 │       └── visualize.py
-│
-└── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
 ```
 
 ## Opinions
