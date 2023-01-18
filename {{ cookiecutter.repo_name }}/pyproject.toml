@@ -6,6 +6,7 @@ authors = ["Robert Meissner <robert.meissner@codecentric.de>"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+pre-commit = "^2.21.0"
 
 [tool.poetry.dev-dependencies]
 
